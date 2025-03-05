@@ -20,7 +20,7 @@ library(dplyr)
 Now, load the dataset. If your data isn't ready yet, you can leave `eval = FALSE` for now and update it when needed.  
 
 
-```{r load-data, message = FALSE, eval = FALSE}
+```{r load-data, message = FALSE}
 # Remove eval = FALSE or set it to TRUE once data is ready to be loaded
 uoe_art <- read_csv("data/uoe-art.csv")
 ```
@@ -37,9 +37,9 @@ uoe_art2 <- uoe_art %>%
 ```
 ## Exercise 10  
 
-##get some errors, Some title values don’t contain (, so date is assigned NA. 
-##Some title values contain multiple (, and separate() keeps only the first split.
-##Some date values don’t just contain valid years (e.g., "circa 1890" or "Unknown") and as.numeric() converts them to NA.
+get some errors, Some title values don’t contain (, so date is assigned NA. 
+Some title values contain multiple (, and separate() keeps only the first split.
+Some date values don’t just contain valid years (e.g., "circa 1890" or "Unknown") and as.numeric() converts them to NA.
 
 ## Exercise 11  
 ```{r Exercise 11}

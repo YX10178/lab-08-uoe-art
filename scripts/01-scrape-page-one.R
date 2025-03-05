@@ -79,3 +79,4 @@ second_ten <- tibble(
   artist = second_artists [1:10],
   link = second_links[1:10]
 )
+
